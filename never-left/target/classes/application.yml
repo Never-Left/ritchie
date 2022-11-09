@@ -1,0 +1,52 @@
+server:
+  port: 8080
+  server:
+    context-path: /
+spring:
+  application:
+    name: never-left
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+mybatis:
+  mapper-locations: classpath*:mybatis/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+pagehelper:
+  page-size-zero: true
+feign:
+  client:
+    config:
+      default:
+        read-timeout: 6000000
+        connect-timeout: 10000
+ribbon:
+  ConnectTimeout: 300000
+  ReadTimeout: 6000000
+knife4j:
+  enable: true
+monitorUUID: ${random.uuid}
+
+management:
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env,metrics,prometheus
+
+#swagger:
+#  enable: true
+#  application-name: ${spring.application.name}
+#  application-version: v1.0
+#  application-description: Hero-ADS广告投放平台API接口文档
+#  try-host: api.adsmartech.yingxiong.com
+#  contact:
+#    name: dong.zhang
+#    email: dong.zhang@yingxiong.com
+#  params:
+#    cuid: 当前登录用户id
