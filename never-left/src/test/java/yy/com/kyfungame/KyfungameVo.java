@@ -1,3 +1,5 @@
+package yy.com.kyfungame;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -11,5 +13,5 @@ import java.util.List;
 @Data
 public class KyfungameVo {
     @JsonProperty("games")
-    private List<GameInfo> games;
+    private List<KyfungameInfo> games;
 }

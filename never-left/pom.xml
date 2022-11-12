@@ -17,6 +17,14 @@
     </properties>
 
         <dependencies>
+
+            <!-- webContorller -->
+<!--            <dependency>-->
+<!--                <groupId>cn.edu.hfut.dmic.webcollector</groupId>-->
+<!--                <artifactId>WebCollector</artifactId>-->
+<!--                <version>2.73-alpha</version>-->
+<!--            </dependency>-->
+
             <!--jsoup-->
             <dependency>
                 <groupId>org.jsoup</groupId>

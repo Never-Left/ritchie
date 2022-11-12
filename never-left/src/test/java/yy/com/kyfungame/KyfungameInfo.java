@@ -1,3 +1,5 @@
+package yy.com.kyfungame;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -13,7 +15,7 @@ import java.util.List;
  * appid
  */
 @Data
-public class GameInfo {
+public class KyfungameInfo {
 
     /**
      * appid
